@@ -1,4 +1,5 @@
-import Server from 'bare-server-node';
+import Server from './bare/Server.mjs';
+import { readFileSync } from 'fs';
 import http from 'http';
 import nodeStatic from 'node-static';
 
@@ -17,4 +18,5 @@ server.on('upgrade', (req, socket, head) => {
 	if(bare.route_upgrade(req, socket, head))return;
 	socket.end();
 });
-server.listen(process.env.PORT || 8080, () => {console.log("Toktik unblocker running at http://localhost:8080")});
+
+server.listen(process.env.PORT || 80);
