@@ -17,4 +17,4 @@ server.on('upgrade', (req, socket, head) => {
 	if(bare.route_upgrade(req, socket, head))return;
 	socket.end();
 });
-server.listen(process.env.PORT || 8080, () => {console.log("Vanadium running at http://localhost:8080")});
+server.listen(process.env.PORT || 8080, () => {console.log("Toktik unblocker running at http://localhost:8080")});
