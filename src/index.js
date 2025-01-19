@@ -72,16 +72,18 @@ process.on("SIGINT", shutdown);
 process.on("SIGTERM", shutdown);
 
 function shutdown() {
-	console.log("SIGTERM signal received: closing HTTP server");
-	fastify.close();
-	process.exit(0);
+  console.log("SIGTERM signal received: closing HTTP server");
+  fastify.close();
+  process.exit(0);
 }
 
-let port = parseInt(process.env.PORT || 8080);
+process.env.PORT = process.env.PORT || 8080;
+
+let port = parseInt(process.env.PORT);
 
 if (isNaN(port)) port = 8080;
 
 fastify.listen({
-	port: port,
-	host: "0.0.0.0",
+  port: port,
+  host: "0.0.0.0",
 });
