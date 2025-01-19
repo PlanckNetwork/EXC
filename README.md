@@ -1,21 +1,29 @@
-<h2>This is a frontend made for the Ultraviolet proxy. (BETA)</h2>
+<p align="center"><img src="https://raw.githubusercontent.com/titaniumnetwork-dev/Ultraviolet-Static/main/public/uv.png" height="200"></p>
 
-# <a href='https://github.com/titaniumnetwork-dev/ultraviolet-node'>View Source</a>
-# Installation
-You can run this on replit.
-<p>
-<a href="https://replit.com/github/DazaSeal/Lunanom/"><img src="https://raw.githubusercontent.com/BinBashBanana/deploy-buttons/master/buttons/remade/replit.svg" width="150" height="35"></a>
-</p>
+<h1 align="center">Ultraviolet-App</h1>
 
-# Running on your own machine
+The deployable all-in-one bundle for [Ultraviolet](https://github.com/titaniumnetwork-dev/Ultraviolet), a highly sophisticated proxy used for evading internet censorship or accessing websites in a controlled sandbox using the power of service-workers and more!
 
-```
-git clone https://github.com/DazaSeal/Lunanom/
-cd Lunanom
-git submodule update --init
-npm install
-npm start
-```
-# Frontend by DazaSeal
-		      
-# Backend by <a href="https://github.com/titaniumnetwork-dev">Titanium Network</a> and Abnumality
+## Deployment
+
+[![Run on Replit](https://binbashbanana.github.io/deploy-buttons/buttons/remade/replit.svg)](https://github.com/titaniumnetwork-dev/Ultraviolet-App/wiki/Run-on-Replit)
+[![Deploy on Railway](https://binbashbanana.github.io/deploy-buttons/buttons/remade/railway.svg)](https://github.com/titaniumnetwork-dev/Ultraviolet-App/wiki/Deploy-on-Railway)
+[![Remix on Glitch](https://binbashbanana.github.io/deploy-buttons/buttons/remade/glitch.svg)](https://github.com/titaniumnetwork-dev/Ultraviolet-App/wiki/Remix-on-Glitch)
+[![Deploy to Koyeb](https://binbashbanana.github.io/deploy-buttons/buttons/remade/koyeb.svg)](https://github.com/titaniumnetwork-dev/Ultraviolet-App/wiki/Deploy-to-Koyeb)
+
+If you are deploying to an alternative service or to a server, refer to [Deploy via terminal](https://github.com/titaniumnetwork-dev/Ultraviolet-App/wiki/Deploy-via-terminal).
+
+Additional information such as [customizing your frontend](https://github.com/titaniumnetwork-dev/Ultraviolet-App/wiki/Customizing-your-frontend) can be found on the [wiki](https://github.com/titaniumnetwork-dev/Ultraviolet-App/wiki).
+
+Support and updates can be found in our [Discord Server](discord.gg/unblock).
+
+> [!IMPORTANT]  
+> Until deployed on a domain with a valid SSL certificate, Firefox will not be able to load the site. Use chromium for testing on localhost
+
+### HTTP Transport
+
+The example uses [EpoxyTransport](https://github.com/MercuryWorkshop/EpoxyTransport) to fetch proxied data encrypted.
+
+You may also want to use [CurlTransport](https://github.com/MercuryWorkshop/CurlTransport), a different way of fetching encrypted data, or [Bare-Client](https://github.com/MercuryWorkshop/Bare-as-module3), the legacy (unencrypted!) transport.
+
+See the [bare-mux](https://github.com/MercuryWorkshop/bare-mux) documentation for more information.
